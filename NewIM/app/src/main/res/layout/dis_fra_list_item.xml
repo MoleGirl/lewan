@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/dis_img"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                fresco:roundedCornerRadius="60dp"
+                fresco:placeholderImage="@drawable/tx"
+                />
+            <!--<ImageView-->
+                <!--android:id="@+id/dis_img"-->
+                <!--android:layout_width="20dp"-->
+                <!--android:layout_height="20dp"-->
+                <!--android:src="@drawable/tx"-->
+                <!--/>-->
+            <TextView
+                android:id="@+id/list_user_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="挽风"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/list_user_address"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|right"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="北京" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/list_need_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="15dp"
+            android:text="求北京地区丝网"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/list_need"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:gravity="center"
+            android:maxLength="15"
+            android:text="求北京地区丝网,价格优惠的,是厂家发货"
+            android:textSize="14sp" />
+    </LinearLayout>
+</LinearLayout>

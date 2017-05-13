@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/include_navi"/>
+    <!--<cn.bmob.imdemo.util.RefreshListView-->
+        <!--android:id="@+id/list_state"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:divider="#808080"-->
+        <!--&gt;-->
+    <!--</cn.bmob.imdemo.util.RefreshListView>-->
+
+    <ListView
+        android:id="@+id/search_product_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#808080"
+        android:background="#ffffff"
+        android:dividerHeight="1px"
+        android:scrollbars="none" />
+
+
+
+
+</LinearLayout>

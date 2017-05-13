@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_navi" />
+
+    <LinearLayout
+        android:id="@+id/lin_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <cn.bmob.imdemo.util.ClearWriteEditText
+            android:id="@+id/update_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:maxLength="5"
+            android:maxLines="1"
+            android:textColor="#353535"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="7dp"
+            android:text="好的名字可以让你的朋友更容易记住"
+            android:textColor="#999"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lin_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f0f0f6"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:gravity="center_vertical"
+            android:text="原密码"
+            android:textColor="#999"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/old_password"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_list_item_bg"
+            android:inputType="textPassword"
+            android:lines="1"
+            android:maxLength="16"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:textColor="#dadada"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:gravity="center_vertical"
+            android:text="新密码"
+            android:textColor="#999"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/new_password"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_list_item_bg"
+            android:hint="6-16个字符,区分大小写"
+            android:inputType="textPassword"
+            android:lines="1"
+            android:maxLength="16"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:textColor="#dadada"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:gravity="center_vertical"
+            android:text="确认密码"
+            android:textColor="#999"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/new_password2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_list_item_bg"
+            android:hint="6-16个字符,区分大小写"
+            android:inputType="textPassword"
+            android:lines="1"
+            android:maxLength="16"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:textColor="#dadada"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/update_pswd_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/rs_select_btn_blue"
+            android:text="确认"
+            android:textColor="#FFF"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#dadada"
+        >
+
+        <TextView
+            android:id="@+id/lin_pay_state"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:text="支付状态"
+            android:textColor="#999"
+            android:paddingLeft="15dp"
+            android:layout_marginBottom="1dp"
+            />
+
+        <TextView
+            android:id="@+id/lin_pay_time"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:text="支付时间"
+            android:textColor="#999"
+            android:paddingLeft="15dp"
+            android:layout_marginBottom="1dp"
+            android:visibility="gone"
+            />
+        <TextView
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="支付说明:新注册用户,第一次发布免费,以后支付20元,可成为永久会员,享受本应用全部服务;注:选择微信支付,请安装相关插件,并在支付时允许打开支付插件的权限.支付成功后如提示未支付,请退出重新登陆该账号"
+            android:textColor="#999"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
